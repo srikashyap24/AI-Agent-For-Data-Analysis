@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyze CSV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Data Analysis Dashboard</h1>
+        </header>
+
+        <div class="dataset-info">
+            📂 Current Dataset: <strong>{{ filename }}</strong>
+        </div>
+        <div class="columns-info">
+            <strong>Columns:</strong> {{ columns|join(', ') }}
+        </div>
+
+        <div class="ask-again">
+            <form method="post">
+                <label for="question">🔍 Ask a question about your data:</label><br>
+                <input type="text" id="question" name="question" placeholder="Type your question..." required>
+                <button type="submit" class="btn">Analyze</button>
+            </form>
+        </div>
+
+        <div class="reset-section">
+            <form action="{{ url_for('reset') }}" method="get">
+                <button type="submit" class="reset-btn">🔄 Reset Dataset</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

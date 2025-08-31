@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Data Analysis Dashboard</h1>
+        </header>
+
+        <div class="dataset-info">
+            📂 Current Dataset: <strong>{{ filename }}</strong>
+        </div>
+
+        {% if summary %}
+        <section class="summary-card">
+            <h2>📊 AI Insights</h2>
+            <div class="summary-content">
+                {{ summary|safe }}
+            </div>
+        </section>
+        {% endif %}
+
+        {% if result and result.image %}
+        <section class="viz-card">
+            <h2>Visualization</h2>
+            <img src="data:image/png;base64,{{ result.image }}" alt="Visualization">
+        </section>
+        {% endif %}
+
+        <div class="ask-again">
+            <form action="{{ url_for('analyze', filename=filename) }}" method="post">
+                <label for="question">🔍 Ask another question about this dataset:</label><br>
+                <input type="text" id="question" name="question" placeholder="Type your question..." required>
+                <button type="submit" class="btn">Ask</button>
+            </form>
+        </div>
+
+        <div class="reset-section">
+            <form action="{{ url_for('reset') }}" method="get">
+                <button type="submit" class="reset-btn">🔄 Reset Dataset</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

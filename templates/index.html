@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload CSV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📂 Upload Your Dataset</h1>
+            <p class="subtitle">Easily analyze your CSV file with AI-powered insights & visualizations.</p>
+        </header>
+
+        <section class="upload-card">
+            <form action="/" method="post" enctype="multipart/form-data">
+                <label class="file-label">
+                    <input type="file" name="file" accept=".csv" required>
+                </label>
+                <button type="submit" class="btn">Analyze Data</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
