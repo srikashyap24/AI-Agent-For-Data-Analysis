@@ -85,12 +85,6 @@ AI-NEW-AGENT/
 
 ---
 
-## Security & Best Practices
-- **Never commit `.env` or secrets to git.**
-- Use `.gitignore` to exclude sensitive files and uploads.
-
----
-
 ## Troubleshooting
 - **OpenAI API errors:** Check your `.env` and API key.
 - **MCP server not running:** Make sure `mcp_server.py` is started before `app.py`.
