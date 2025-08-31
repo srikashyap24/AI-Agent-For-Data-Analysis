@@ -1,0 +1,8 @@
+flask
+openai
+python-dotenv
+pandas
+matplotlib
+seaborn
+markdown
+requests
