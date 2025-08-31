@@ -88,7 +88,7 @@ AI-NEW-AGENT/
 
 ### 1. Upload CSV File  
 Easily upload your dataset to start the analysis.  
-![Upload CSV](images/upload_page.png)  
+<img src="images/upload.png"/>  
 
 ---
 
