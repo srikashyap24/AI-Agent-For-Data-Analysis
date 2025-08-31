@@ -94,19 +94,19 @@ Easily upload your dataset to start the analysis.
 
 ### 2. Ask a Question  
 Type your query, such as *“give me any visualisation of salary”*.  
-![Ask Question](images/question_salary.png)  
+<img src="images/demo question.png">
 
 ---
 
 ### 3. Visualization Example  
 The agent generates a **Histogram of Salary** along with a clear explanation of the distribution.  
-![Histogram of Salary](images/salary_histogram.png)  
+<img src="images/hist of salary.png">
 
 ---
 
 ### 4. Missing Values Report  
 Quickly check how many **null values** exist across all columns.  
-![Missing Values](images/missing_values.png)  
+<img src="images/null values.png">
 
 
 ---
