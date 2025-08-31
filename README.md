@@ -84,6 +84,32 @@ AI-NEW-AGENT/
 ```
 
 ---
+## 📸 Screenshots
+
+### 1. Upload CSV File  
+Easily upload your dataset to start the analysis.  
+![Upload CSV](images/upload_page.png)  
+
+---
+
+### 2. Ask a Question  
+Type your query, such as *“give me any visualisation of salary”*.  
+![Ask Question](images/question_salary.png)  
+
+---
+
+### 3. Visualization Example  
+The agent generates a **Histogram of Salary** along with a clear explanation of the distribution.  
+![Histogram of Salary](images/salary_histogram.png)  
+
+---
+
+### 4. Missing Values Report  
+Quickly check how many **null values** exist across all columns.  
+![Missing Values](images/missing_values.png)  
+
+
+---
 
 ## Troubleshooting
 - **OpenAI API errors:** Check your `.env` and API key.
